@@ -1,4 +1,8 @@
-# init
+# cmd
+
+```sh
+npm install yarn -g
+ ```
 
  ```sh
  mkdir berry
@@ -32,16 +36,29 @@
  cd ..
  ```
 
-```sh
- yarn add yarn -W
- ```
-
- # config
-
- berry/package.json
+berry/package.json
  ```json
  "workspaces": [
    "palm.core",
    "palm.uvr"
  ]
  ```
+
+```sh
+yarn set version berry
+```
+
+```sh
+yarn set version latest
+```
+
+```sh
+yarn plugin import workspace-tools
+```
+
+berry/.yarnrc.yml
+```yml
+nodeLinker: "pnp"
+pnpMode: "strict"
+```
+

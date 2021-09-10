@@ -6,5 +6,6 @@
   "workspaces": [
     "palm.core",
     "palm.uvr"
-  ]
+  ],
+  "packageManager": "yarn@3.0.2"
 }
