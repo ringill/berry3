@@ -86,9 +86,68 @@ yarn add eslint@7.32.0
 ```
 
 ```sh
-yarn add prettier
+yarn add prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
 StylelintConfig for VS Code
 
 Generate .stylelint.rc
+
+```sh
+yarn add stylelint stylelint-config-standard stylelint-config-recess-order stylelint-config-prettier
+```
+
+```sh
+yarn add postcss-html postcss-syntax
+
+berry/.vscode/settings.json
+```json  
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+```
+
+```sh
+yarn dlx @yarnpkg/sdks vscode
+```
+
+berry/.eslintignore
+```
+/.vscode
+/.git
+node_modules
+```
+
+berry/.eslintrc.json
+```json
+{
+  "env": {
+      "browser": true
+  },
+  "parserOptions": { "ecmaVersion": 6 },
+  "rules": {
+      // Override our default settings just for this directory
+      "eqeqeq": "warn",
+      "strict": "off",
+      "no-magic-numbers": "error"
+  }
+}
+```
+
+berry/.vscode/settings.json
+```json
+"editor.formatOnSave": false,
+"[javascript]": {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[typescript]": {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"[typescriptreact]": {
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+},
+"eslint.format.enable": true
+```

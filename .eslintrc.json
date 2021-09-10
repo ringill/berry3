@@ -1,0 +1,12 @@
+{
+  "env": {
+      "browser": true
+  },
+  "parserOptions": { "ecmaVersion": 6 },
+  "rules": {
+      // Override our default settings just for this directory
+      "eqeqeq": "warn",
+      "strict": "error",
+      "no-magic-numbers": "error"
+  }
+}
