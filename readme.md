@@ -1,3 +1,10 @@
+# vscode-plugin
+- https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+- https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+- https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint
+- https://marketplace.visualstudio.com/items?itemName=whosydd.stylelint-config
+
+
 # cmd
 
 ```sh
@@ -19,6 +26,10 @@ npm install yarn -g
  ```sh
  yarn create react-app palm-uvr --template typescript
  ```
+
+ ```sh
+del ./palm-uvr/.yarn.lock
+```
  
 ```sh
  mkdir palm-core
@@ -67,10 +78,17 @@ yarn
 ```
 
 ```sh
-del ./palm-uvr/.yarn.lock
-```
-
-```sh
 yarn add typescript@4.1.2
 ```
 
+```sh
+yarn add eslint@7.32.0
+```
+
+```sh
+yarn add prettier
+```
+
+StylelintConfig for VS Code
+
+Generate .stylelint.rc
