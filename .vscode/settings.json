@@ -11,6 +11,7 @@
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "stylelint.stylelintPath": ".yarn/sdks/stylelint/lib/index.js",
+  "stylelint.enable": true,
   "editor.formatOnSave": false,
   "[javascript]": {
     "editor.formatOnSave": true,

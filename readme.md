@@ -151,3 +151,15 @@ berry/.vscode/settings.json
 },
 "eslint.format.enable": true
 ```
+
+```sh
+yarn add react@17.0.2 react-dom@17.0.2
+```
+
+```sh
+yarn add eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latest eslint-config-standard@latest eslint@7.12.1 eslint-plugin-import@2.22.1 eslint-plugin-node@11.1.0 eslint-plugin-promise@5.0.0 @typescript-eslint/parser@latest
+```
+
+```sh
+yarn node ./.yarn/sdks/eslint/bin/eslint.js --init
+```
