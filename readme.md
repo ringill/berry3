@@ -17,15 +17,15 @@ npm install yarn -g
  ```
  
  ```sh
- yarn create react-app --template typescript
+ yarn create react-app palm-uvr --template typescript
  ```
  
 ```sh
- mkdir palm.core
+ mkdir palm-core
  ```
 
  ```sh
- cd palm.core
+ cd palm-core
  ```
 
  ```sh
@@ -39,8 +39,8 @@ npm install yarn -g
 berry/package.json
  ```json
  "workspaces": [
-   "palm.core",
-   "palm.uvr"
+   "palm-core",
+   "palm-uvr"
  ]
  ```
 
@@ -60,5 +60,17 @@ berry/.yarnrc.yml
 ```yml
 nodeLinker: "pnp"
 pnpMode: "strict"
+```
+
+```sh
+yarn
+```
+
+```sh
+del ./palm-uvr/.yarn.lock
+```
+
+```sh
+yarn add typescript@4.1.2
 ```
 

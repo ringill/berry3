@@ -4,8 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "workspaces": [
-    "palm.core",
-    "palm.uvr"
+    "palm-core",
+    "palm-uvr"
   ],
-  "packageManager": "yarn@3.0.2"
+  "packageManager": "yarn@3.0.2",
+  "dependencies": {
+    
+  }
 }
