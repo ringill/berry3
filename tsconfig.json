@@ -12,22 +12,12 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
-    "strictNullChecks": false,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": [
-    "src",
-    "./*.js"
-  ],
-  "exclude": [
-    ".yarn",
-    "src/themes/**",
-    "src/**/*.json"
-  ]
+    "jsx": "react-jsx"
+  }
 }
